@@ -1,0 +1,15 @@
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+img {
+  height: 400px;
+  width: 600px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+p {
+  color: fuchsia;
+  text-align: center;
+}

@@ -1,0 +1,40 @@
+<div class="container">
+  
+  <div class="row">
+    <h1 class="center">Welcome to the Pokémon Generator</h1><br>
+  </div>
+  
+  <div class="row">
+    <h1 class="center">Generate a Random…</h1>
+    <br>
+    <div class="col-md-5 col-md-offset-1">
+      <h2 class="center">Pokémon Character</h2>
+      <br>
+      <button type="button" 
+              class="btn btn-primary btn-lg btn-block"
+              ng-click="charGet()"
+              >Show me a Pokémon!</button>
+      <br>
+      <img class="img-responsive center-block" 
+           ng-src="http://bukk.it/beaker-freak.gif" 
+           ng-show="loadingChar">
+      <img class="img-responsive center-block" 
+           ng-src="{{ charImg }}" 
+           ng-hide="loadingChar">
+      <h2 class="center">{{ char.name | titlecase }}</h2>
+    </div>
+    
+    <div class="col-md-5">
+      <h2 class="center">Pokémon Move</h2><br>
+      <button type="button" 
+              class="btn btn-primary btn-lg btn-block"
+              ng-click="moveGet()"
+              >Bust a Move!</button><br>
+      <img class="img-responsive" 
+           ng-src="http://bukk.it/moveitmoveit.gif" 
+           ng-if="loadingMove">
+      <h2 class="center">{{ move.name }}</h2>
+    </div>
+  </div>  
+  
+</div>

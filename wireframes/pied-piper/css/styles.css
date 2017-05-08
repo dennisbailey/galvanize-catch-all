@@ -1,0 +1,57 @@
+html {
+  max-width: 1024px;
+  max-height: 600px
+}
+
+header {
+  max-width: 1024px;
+  height: 100px; 
+}
+
+nav {
+  float: left;
+  width: 20%;
+  border: 1px solid black;
+}
+
+nav ul {
+  list-style: none;
+  text-align: left;
+  height: 500px;
+  padding-left: 10px;
+}
+
+nav li {
+  font-size: large;
+  line-height: 1.5em;
+}
+
+.intro {
+  float: right;
+  width: 75%;
+}
+
+.intro h2 {
+  margin-top: 0;
+}
+
+.tri-product {
+  width: 75%;
+  float: right;
+}
+
+.product {
+  display: inline-block;
+  border: 2px solid black;
+  width: 24%;
+}
+
+.product:nth-child(2) {
+  margin: 0 48px;
+}
+
+img {
+  height: 50px;
+  width: 50px;
+  text-align: center;
+}

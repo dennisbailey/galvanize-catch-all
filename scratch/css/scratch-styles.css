@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 1000px;
+}
+
+nav {
+  position: relative;
+  background-color: #4178bf;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+nav a {
+  display: inline-block;
+  color: white;
+  margin: 0 10px;
+  height: 30px;
+}
+
+.about-dropdown {
+  display:none;
+  position: fixed;
+  top: 30px;
+  left: 70px;
+  background-color: #ffb847;
+}
+
+nav:hover .about-dropdown {
+  display: block;  
+}
+
+.about-dropdown a {
+  display: block;
+  padding-top: 5px;
+}
+
+
+
+body div {
+  float: left;
+  height 100px;
+  -webkit-box-sizing: border-box;
+}
+
+.eighty, .twenty {
+    display: inline-block;
+}
+
+.eighty {
+  background-color: blue;
+  width: 80%;
+}
+
+.twenty {
+  background-color: red;
+  width: 20%;
+}

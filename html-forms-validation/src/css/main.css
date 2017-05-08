@@ -1,0 +1,53 @@
+/* add custom styles */
+html {
+  font-size: 18px;
+}
+
+body {
+  background: #efefef;
+}
+
+.container {
+  background: white;
+  border-radius: 1.5rem;
+  margin: 1.5rem auto;
+  padding: 2rem;
+  width: 600px;
+}
+
+h1 {
+  margin: 0 0 1.5rem;
+}
+
+.row {
+  margin-bottom: 1.5rem;
+}
+
+.row label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.row input {
+  width: 100%;
+}
+
+.bad-input {
+  box-shadow: 0 0 5px red;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  outline: 0 none;
+  border: 1px solid red;
+}
+
+/*
+.bad-input {
+  box-shadow: 0 0 5px red;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid red;
+}
+*/

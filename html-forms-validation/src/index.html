@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML &amp; JS Form Validation</title>
+    
+    <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>Signup Form</h1>
+      <form>
+        <div class="row">
+          <label for="preferredName">Preferred Name</label>
+          <input id="prefName" type="text" autofocus="" required="">
+        </div>
+
+        <div class="row">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" required="">
+        </div>
+
+        <div class="row">
+          <label for="email">Email</label>
+          <input type="email" required="">
+        </div>
+
+        <div class="row">
+          <label for="password">Password</label>
+          <input type="password" required="">
+        </div>
+
+        <input type="submit">
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>

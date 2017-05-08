@@ -1,0 +1,76 @@
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+nav {
+  width: 100%;
+  text-align: left;
+  border-style: solid;
+  border-color: black;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 5px 0;
+}
+
+li {
+  display: inline;
+  width: 25%;
+  padding: 0 20px;
+  font-size: 20px;
+}
+
+form {
+  font-size: 20px;
+  padding-top: 40px;
+}
+
+legend {
+  font-size: 30px;
+}
+
+.group {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.group input {
+  width: 300px;
+  border-style: solid;
+  border-color: black;
+  font-size: 20px;
+}
+
+.group label {
+  display: inline-block;
+  width: 50px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+label {
+  color: purple;
+}
+
+legend {
+  color: orange;
+}
+
+#cb {
+  outline: 1px solid purple;
+  outline-offset: -2px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+button {
+  background-color: orange;
+  border-style: solid;
+  border-color: black;
+  margin-top: 20px;
+  margin-left: 5px;
+  box-shadow: 3px 3px black;
+  font-size: 20px;
+}

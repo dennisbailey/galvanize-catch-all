@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 10px 10px;
+}
+
+.row {
+  border: 1px solid black;
+  margin: 10px 0;
+  width: 100%;
+}
+
+.row > div {
+  border: 1px solid red;
+  display: inline-block;
+}
+
+p {
+   font-size: medium;
+   text-align: center;
+}
+
+.col-* {
+  float: left;
+}
+
+.col-1 {
+  width: 8.3%;
+}
+
+.col-4 {
+  width: 33%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-8 {
+  width: 66%;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Untitled</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <!-- sample angular code -->
+    <div class="container">
+<!--
+      <div ng-controller="ExerciseController">
+        <h3>My name favorite color is: {{favColor}}</h3>
+        <h3>The number of seconds in a century is: {{secondsInACentury | number}}</h3>
+        <h3>Today's date is: {{rightNow | date:'EEEE, MMMM d, yyyy'}}</h3>
+      </div>
+-->
+      <br>
+      <div ng-controller="madLibsController">
+        <h2>Mad Libs</h2>
+    
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" ng-model="name">
+        <br>
+        <label for="adj">Adjective</label>
+        <input type="text" name="adj" ng-model="adj">
+        <br>
+        <label for="pluralNoun1">Plural Noun</label>
+        <input type="text" name="pluralNoun1" ng-model="pluralNoun1">
+        <br>
+        <label for="pluralNoun2">Plural Noun</label>
+        <input type="text" name="pluralNoun2" ng-model="pluralNoun2">
+        <br>
+        <label for="insect">Insect (plural)</label>
+        <input type="text" name="insect" ng-model="insect">
+        <br>
+        <label for="pluralNoun3">Plural Noun</label>
+        <input type="text" name="pluralNoun3" ng-model="pluralNoun3">
+        <br>
+        <label for="verb">A verb ending in "s"</label>
+        <input type="text" name="verb" ng-model="verb">
+        <br>
+<!--         ng-show="verb.length > 0" -->
+        <p>I'm in love with <span>{{name | uppercase}}</span>. They're so <span>{{adj | uppercase}}</span>! He has big flat <span>{{pluralNoun1 | uppercase}}</span>, and when our <span>{{pluralNoun2 | uppercase}}</span> meet, I get <span>{{insect | uppercase}}</span> in my stomach. I've fallen for them like a ton of <span>{{pluralNoun3 | uppercase}}</span>, and they <span>{{verb | uppercase}}</span>for me, too. But I think he's got another girlfriend. What should I do?</p>
+
+      </div>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>

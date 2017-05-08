@@ -1,0 +1,8 @@
+body {
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+li {
+  list-style-type: none;
+  padding-top: 7px;
+}

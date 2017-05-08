@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='angularTexting'>
+  <head>
+    <meta charset="utf-8">
+    <title>Angular Texting App</title>
+    
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+  </head>
+  <body>
+    <!-- sample angular code -->
+    <div class="container">
+      <div ng-controller="mainController">
+        
+        <form class="form-horizontal" novalidate>
+        <fieldset>
+        
+        <!-- Form Name -->
+        <legend>Let's Talk About Text!</legend>
+        
+        <!-- Text input-->
+        <div class="form-group" name="form">
+          <label class="col-md-4 control-label" for="phone">Phone Number</label>  
+          <div class="col-md-5">
+          <input id="phone" 
+                 name="phone" 
+                 type="text" 
+                 placeholder="555-555-5555" 
+                 class="form-control input-md"
+                 ng-max="10"
+                 ng-model="text.number"
+                 >
+          <span>{{text.number}}</span>
+          <div class="well" ng-show="form.phone.length > 0">Give me 10 digits, Vasily. Ten digits only, please.</span>       
+          </div>
+        </div>
+        
+        <!-- Text input-->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="message">Message</label>  
+          <div class="col-md-5">
+          <input id="message" 
+                 name="message" 
+                 type="text" 
+                 placeholder="Hello!" 
+                 class="form-control input-md"
+                 ng-model="text.message"
+                 >
+            
+          </div>
+        </div>
+        
+        <!-- Button -->
+        <div class="form-group">
+          <label class="col-md-4 control-label" for="submit"></label>
+          <div class="col-md-4">
+            <button id="submit" name="submit" class="btn btn-primary">SMS it up</button>
+          </div>
+        </div>
+        
+        </fieldset>
+        </form>
+        
+        
+        
+      </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.10/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/controllers.js"></script>
+    
+  </body>
+</html>

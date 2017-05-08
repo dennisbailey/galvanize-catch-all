@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TITLE</title>
+  </head>
+  
+  <body>
+    <h1>Reviews for all the great movies</h1>        
+    <h3>What flick do you want to know the the Rotten Tomatoes score for?</h3>
+
+    <form id="input" class="form-control">
+      Movie Title: 
+        <input type="text" value="Hackers" id="title">
+      Year: 
+        <input type="text" id="year">
+      Summary: 
+        <select class="summary">
+          <option value="short">Concise</option>
+          <option value="full">Long winded</option>
+        </select>
+      Get it: 
+        <input type="submit" id="submit">
+    </form>
+
+    <h3 id="tomatoScore">Rotten Tomatoes says: </h3>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+  
+</html>
